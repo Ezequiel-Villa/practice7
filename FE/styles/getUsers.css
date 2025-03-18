@@ -1,0 +1,128 @@
+/* Estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #161616;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    width: 300px;
+    padding: 25px;
+    background-color: #161616;
+    box-shadow: 0px 15px 60px #00FF7F;
+    outline: 1px solid #2b9962;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #00FF7F;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.users-button {
+    display: block;
+    width: 96%;
+    padding: 14px 13px;
+    background-color: transparent;
+    color: #FFA500; /* Color naranja para distinguirlo */
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid #FFA500; /* Borde naranja */
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    transition: all ease-in-out 0.3s;
+    margin-top: 10px; /* Espacio entre el botón de Guardar y este */
+}
+
+.users-button:hover {
+    background-color: #FFA500; /* Fondo naranja al hacer hover */
+    color: #161616; /* Texto oscuro al hacer hover */
+}
+
+/* Estilos para las tarjetas de usuarios */
+.user-card {
+    background-color: #1e1e1e; /* Fondo oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #2b9962; /* Borde verde */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px); /* Efecto de levitación */
+    box-shadow: 0px 10px 20px rgba(0, 255, 127, 0.2); /* Sombra verde */
+}
+
+.user-card h3 {
+    color: #00FF7F; /* Título en verde neón */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.user-card p {
+    color: #ffffff; /* Texto blanco */
+    margin: 5px 0;
+}
+
+.user-card strong {
+    color: #00FF7F; /* Etiquetas en verde neón */
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .user-card {
+        padding: 15px;
+    }
+
+    .user-card h3 {
+        font-size: 18px;
+    }
+
+    .user-card p {
+        font-size: 14px;
+    }
+}
+
+/* Tabletas y pantallas medianas */
+@media (min-width: 481px) and (max-width: 768px) {
+    .user-card {
+        padding: 18px;
+    }
+
+    .user-card h3 {
+        font-size: 20px;
+    }
+
+    .user-card p {
+        font-size: 16px;
+    }
+}
+
+/* Pantallas grandes (escritorio) */
+@media (min-width: 769px) {
+    .user-card {
+        padding: 20px;
+    }
+
+    .user-card h3 {
+        font-size: 22px;
+    }
+
+    .user-card p {
+        font-size: 18px;
+    }
+}
+
