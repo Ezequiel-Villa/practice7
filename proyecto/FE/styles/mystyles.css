@@ -1,0 +1,181 @@
+/* Estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #161616;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+.container {
+    width: 300px;
+    padding: 25px;
+    background-color: #161616;
+    box-shadow: 0px 15px 60px #00FF7F;
+    outline: 1px solid #2b9962;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #00FF7F;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los grupos de entrada */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 90%;
+    padding: 11px 25px;
+    background: transparent;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    color: #00FF7F;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border: 1px solid #00FF7F;
+    outline: none;
+}
+
+/* Estilos para el botón de envío */
+button[type="submit"] {
+    width: 103%;
+    padding: 14px 13px;
+    background-color: transparent;
+    color: #00FF7F;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid #00FF7F;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #00FF7F;
+    color: #161616;
+}
+/* Estilos para el botón "Ver Usuarios" */
+.users-button {
+    display: block;
+    width: 96%;
+    padding: 14px 13px;
+    background-color: transparent;
+    color: #FFA500; /* Color naranja para distinguirlo */
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid #FFA500; /* Borde naranja */
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    transition: all ease-in-out 0.3s;
+    margin-top: 10px; /* Espacio entre el botón de Guardar y este */
+}
+
+.users-button:hover {
+    background-color: #FFA500; /* Fondo naranja al hacer hover */
+    color: #161616; /* Texto oscuro al hacer hover */
+}
+
+/* Estilos para el contenedor del clima API*/
+#weather-info {
+    background-color: #1e1e1e; /* Fondo oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #2b9962; /* Borde verde */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#weather-info h2 {
+    color: #00FF7F; /* Título en verde neón */
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+#weather-info p {
+    color: #ffffff; /* Texto blanco */
+    margin: 5px 0;
+}
+
+#weather-info strong {
+    color: #00FF7F; /* Etiquetas en verde neón */
+}
+
+
+/* Media Queries para Responsividad */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Ocupa casi todo el ancho en móviles */
+        padding: 15px; /* Menos padding para ahorrar espacio */
+    }
+
+    h1 {
+        font-size: 32px; /* Título más pequeño */
+    }
+
+    .input-group input {
+        padding: 10px 20px; /* Padding más pequeño para inputs */
+        font-size: 13px; /* Fuente más pequeña */
+    }
+
+    button[type="submit"] {
+        padding: 12px 10px; /* Botón más compacto */
+        font-size: 13px; /* Fuente más pequeña */
+    }
+}
+
+
+/* Tabletas y pantallas medianas */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 80%; /* Ancho relativo para tabletas */
+        max-width: 350px; /* Ancho máximo para tabletas */
+    }
+
+    h1 {
+        font-size: 36px; /* Título un poco más pequeño */
+    }
+
+    .input-group input {
+        padding: 12px 22px; /* Padding intermedio */
+        font-size: 14px; /* Fuente estándar */
+    }
+
+    button[type="submit"] {
+        padding: 13px 12px; /* Botón intermedio */
+        font-size: 14px; /* Fuente estándar */
+    }
+}
+
+/* Pantallas grandes (escritorio) */
+@media (min-width: 769px) {
+    .container {
+        width: 400px; /* Ancho fijo para pantallas grandes */
+    }
+}
+
+
